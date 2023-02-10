@@ -113,12 +113,7 @@ if __name__ == "__main__":
             month_name = first_day_of_month.strftime('%B')  # i.e. October
             print(year, month, '\n')
 
-            pull_source_data(year, month, 'bzx')
-            pull_source_data(year, month, 'byx')
-            pull_source_data(year, month, 'edga')
-            pull_source_data(year, month, 'edgx')
-
-            pull_source_data_finra(month_name)
+            pull_source_data(year, month, 'xyz')
 
             first_day_of_month -= relativedelta(months=1)
             last_day_of_month = first_day_of_month + relativedelta(months=1) - relativedelta(days=1)
